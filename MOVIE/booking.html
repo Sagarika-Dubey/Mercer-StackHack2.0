@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="ss.css" />
+    <title>Movie Ticket Booking</title>
+  </head>
+  <body>
+    <!--Movie select option-->
+    <div class="movie-container">
+      <label> Select a movie:</label>
+      <select id="movie">
+        <option value="220">Munjya (RS.220)</option>
+        <option value="200">Stree2 (RS.200)</option>
+        <option value="250">Maharaja (RS.250)</option>
+        <option value="250">Srikanth (RS.250)</option>
+        <option value="250">Leo (RS.250)</option>
+        <option value="250">Madgaon Express(RS.250)</option>
+        <option value="250">Mr and Ms Mahi (RS.250)</option>
+        <option value="250">Kalki (RS.250)</option>
+        <option value="250">Bad News (RS.250)</option>
+        <option value="250">Pathan (RS.250)</option>
+      </select>
+      
+    </div>
+    <div>
+      <label>(Select your movie from above dropbox)</label>
+    </div>
+    <!--Showcase-->
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+
+    <!--Main Container-->
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span> seat for a price of RS.<span
+        id="total"
+        >0</span>
+      <br><br>
+      <button  class="login-btn">PAY 
+      </button>
+    </p>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>

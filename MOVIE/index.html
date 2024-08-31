@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  
+</head>
+<body>
+    <!-- Navbar  -->
+    <header>
+        <a href="#home" class="logo">
+            <i class='bx bxs-movie'></i>MOVIEHUB
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <!-- menu  -->
+        <ul class="navbar">
+            
+            <li><a href="#home" class="home-active">Home</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#coming">Coming</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+        <button  class="login-btn">Sign In</button>
+        
+        
+    </header>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">Close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+            <form action="/demo.html" method="post">
+
+                <h2>LOGIN</h2>
+                <form action="/demo.html" method="post">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+              <from action="registration.html" method="post">
+
+                <h2>SIGNUP</h2>
+                <form action="/registration.html" method="post" >
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Enter your email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+              </from>
+            </div>
+        </div>
+    </div> 
+    <!-- Home  -->
+    <section class="home swiper" id="home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide container">
+                <img src="./img/munjyaw.jpeg" alt="">
+                <div class="home-text">
+                    <span></span>
+                    <h1>MUNJYA <br></h1>
+                    <a href="./booking.html" class="btn">Book Now</a>
+                    <a href="" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/stree.jpeg" alt="">
+                <div class="home-text">
+                    <span></span>
+                    <h1>Stree 2<br></h1>
+                    <a href="./booking.html" class="btn">Book Now</a>
+                    <a href="" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/maharaja.jpeg" alt="">
+                <div class="home-text">
+                    <span></span>
+                    <h1>MAHARAJA <br></h1>
+                    <a href="./booking.html" class="btn">Book Now</a>
+                    <a href="" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide container">
+                <img src="./img/sri.jpeg" alt="">
+                <div class="home-text">
+                    <span></span>
+                    <h1>Srikanth <br></h1>
+                    <a href="./booking.html" class="btn">Book Now</a>
+                    <a href="" class="play">
+                        <i class='bx bx-play' ></i>
+                    </a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Movies  -->
+    <div class="movies" id="movies">
+        <h2 class="heading">Opening This Week</h2>
+        <!-- Movies container  -->
+        <div class="movies-container">
+            <!-- box-1  -->
+            <div class="box">
+                <div class="box-img">
+                    <a href= "./booking.html"><img src="./img/munjya.jpeg" alt=""></a>
+                </div>
+                <h3>Munjya</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box-2  -->
+            <div class="box">
+                <div class="box-img">
+                    <a href= "./booking.html"><img src="./img/leo.jpeg" alt=""></a>
+                </div>
+                <h3>Leo</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box-3  -->
+            <div class="box">
+                <div class="box-img">
+                    <a href= "./booking.html"><img src="./img/stree2.jpeg" alt=""></a>
+                </div>
+                <h3>Stree2</h3>
+                <span>120 min | Thriller</span>
+            </div>
+            <!-- box-4  -->
+            <div class="box">
+                <div class="box-img">
+                    <a href= "./booking.html"><img src="./img/madgaon.jpeg" alt=""></a>
+                </div>
+                <h3>Madgaon Express</h3>
+                <span>120 min | Comedy</span>
+            </div>
+            <!-- box-5  -->
+            <div class="box">
+                <div class="box-img">
+                    <a href= "./booking.html"><img src="./img/maharaja2.jpeg" alt=""></a>
+                </div>
+                <h3>Maharaja</h3>
+                <span>120 min | Thriller</span>
+            </div>
+            <!-- box-6  -->
+            <div class="box">
+                <div class="box-img">
+                    <a href= "./booking.html"><img src="./img/mrmrs.jpeg" alt=""></a>
+                </div>
+                <h3>Mr and Ms Mahi</h3>
+                <span>120 min | Comedy</span>
+            </div>
+            <!-- box-7  -->
+            <div class="box">
+                <div class="box-img">
+                    <a href= "./booking.html"><img src="./img/srikanth.jpeg" alt=""></a>
+                </div>
+                <h3>Srikanth</h3>
+                <span>120 min | Adventure</span>
+            </div>
+            <!-- box-8  -->
+            <div class="box">
+                <div class="box-img">
+                    <a href= "./booking.html"><img src="./img/kalki.jpeg" alt=""></a>
+                </div>
+                <h3>Kalki</h3>
+                <span>120 min | Action</span>
+            </div>
+            <!-- box-9  -->
+            <div class="box">
+                <div class="box-img">
+                    <a href= "./booking.html"><img src="./img/badnews.jpeg" alt=""></a>
+                </div>
+                <h3>Bad News</h3>
+                <span>120 min | Comedy</span>
+            </div>
+            <!-- box-10  -->
+            <div class="box">
+                <div class="box-img">
+                    <a href= "./booking.html"><img src="./img/m2.jpg" alt=""></a>
+                </div>
+                <h3>Pathan</h3>
+                <span>120 min | Action</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- coming  -->
+    <section class="coming" id="coming">
+        <h2 class="heading">Coming Soon</h2>
+        <!-- coming contanier  -->
+        <div class="coming-container swiper">
+            <div class="swiper-wrapper">
+                <!-- box-1  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/bhool.jpeg" alt="">
+                    </div>
+                    <h3>Bhool Bhulaiyaa 3</h3>
+                </div>
+                <!-- box-2  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/raid.jpeg" alt="">
+                    </div>
+                    <h3>RAID 2</h3>
+                </div>
+                <!-- box-3  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/devara.jpeg" alt="">
+                    </div>
+                    <h3>DEVARA</h3>
+                </div>
+                <!-- box-4  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/jolly.jpeg" alt="">
+                    </div>
+                    <h3>Jolly LLB 3</h3>
+                </div>
+                <!-- box-5  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/jigra.jpeg" alt="">
+                    </div>
+                    <h3>Jigra</h3>
+                </div>
+                <!-- box-6  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/pushpa.jpeg" alt="">
+                    </div>
+                    <h3>Pushpa 2</h3>
+                </div>
+                <!-- box-7 -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/kanhapura.jpeg" alt="">
+                    </div>
+                    <h3>Kannappa</h3>
+                </div>
+                <!-- box-8  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/h5.jpeg" alt="">
+                    </div>
+                    <h3>Housefull 5</h3>
+                </div>
+                <!-- box-9  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/baby.jpeg" alt="">
+                    </div>
+                    <h3>Baby John</h3>
+                </div>
+                <!-- box-10  -->
+                <div class="swiper-slide box">
+                    <div class="box-img">
+                        <img src="./img/sky.jpeg" alt="">
+                    </div>
+                    <h3>Sky Force</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter /\ -->
+    <section class="newsletter" id="newsletter">
+        <h2>Subscribe To Get <br>Newsletter</h2>
+        <form action="">
+            <input type="email" class="email" placeholder="Enter Email" required>
+            <input type="submit" value="Subscribe" class="btn">
+        </form>
+    </section>
+
+    <!-- footer  -->
+    <section class="footer">
+        <a href="" class="logo">
+            <i class="bx bxs-movie"></i>MOVIEHUB
+        </a>
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook'></i></a>
+            <a href=""><i class='bx bxl-twitter'></i></a>
+            <a href=""><i class='bx bxl-instagram'></i></a>
+        </div>
+    </section>
+
+    <!-- Copyright  -->
+    <div class="copyright">
+        <p>&#169; MOVIEHUB All Right Reserved</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="login.js" defer></script>
+</body>
+</html>
